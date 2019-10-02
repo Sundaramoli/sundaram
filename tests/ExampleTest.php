@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\WithoutMiddleware;
-
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
@@ -13,10 +13,8 @@ class ExampleTest extends TestCase
      */
     public function testBasicExample()
     {
-        ${
-    $this->visit('/')
-         ->click('book')
-         ->seePageIs('/book');
-}
+        $this->visit('/')
+             ->see('Laravel 5')
+             ->dontSee('Rails');
     }
 }

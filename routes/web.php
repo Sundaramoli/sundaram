@@ -27,8 +27,11 @@ Route::get('/Contactus',function(){
 
 Route::resource('book','BooksController');
 
-$this->visitRoute('profile');
-$this->visitRoute('profile', ['user' => 1]);
+
+
+
+
+Route::resource
 
 
 
